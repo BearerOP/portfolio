@@ -18,6 +18,7 @@ const ProjectCard = (props) => {
       <div className="project-wrapper">
         <div className="project-left">
           <h2 className="project-title">{props.title}</h2>
+          <p className="project-stack">{props.subTitle}</p>
           <p className="project-stack">{props.stack}</p>
         </div>
         <div className="project-right">

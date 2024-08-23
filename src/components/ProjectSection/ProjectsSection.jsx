@@ -5,23 +5,34 @@ import "./ProjectSection.css";
 const ProjectList = () => {
   const projectData = [
     {
-      title: "LuxeThreads",
-      subTitle: "E-commerce Store",
-      stack: "MERN, JWT, OAuth, Stripe, Cloudinary",
-      url: "https://luxethreads.vercel.app",
+      title: "Avadhi",
+      subTitle: "An API Monitoring Web Application.",
+      stack: "MERN, JWT, Vercel, AWS EC2",
+      url: "",
     },
     {
-      title: "Keepr",
-      subTitle: "Note Taking App",
-      stack: "ReactJS, Firebase",
-      url: "https://keepr-app.vercel.app",
+      title: "Slug",
+      subTitle: "A URL Shortener Project.",
+      stack: "MERN, JWT, Vercel, Public IPs",
+      url: "",
     },
     {
-      title: "Workout Buddy",
-      subTitle: "Workout Tracker",
-      stack: "MERN, JWT",
-      url: "https://workoutbuddyapp.netlify.app",
+      title: "Swasthya",
+      subTitle: "A Health & Fitness Monitoring Mobile Application.",
+      stack: "React Native, Mongo, NodeJS, Express, Firebase",
+      url: "",
     },
+    {
+      title: "Dhanam",
+      subTitle: "WEB 3 based Crypto Wallet",
+      stack: "Typescript, Shadcn, Tailwind",
+      url: "",
+    },
+    {
+      title:"OTP Generation Package",
+      subTitle: "A NodeJS package for generating OTPs.",
+      stack: "NodeJS, npm",
+    }
   ];
 
   return (
