@@ -6,8 +6,8 @@
   --text-secondary: #ddd;
   --text-tertiary: #bbb;
 
-  --bg-primary: #1d1d1d;
-  --bg-secondary: #232323;
+  --bg-primary: #0c071c;
+  --bg-secondary: #191427;
 
   --accent-primary: #0064ff;
   --accent-secondary: #277cff;
@@ -23,7 +23,7 @@
   margin: 0;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 body {
   font-family: "Inter", sans-serif;

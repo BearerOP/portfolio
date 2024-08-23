@@ -5,7 +5,7 @@ const CustomButton = ({ text, size, link }) => {
   const handleScroll = () => {
     const element = document.getElementById(link);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "" });
     }
   };
   return (

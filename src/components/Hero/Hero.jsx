@@ -48,7 +48,7 @@ const Hero = () => {
               </a>
               <div>/</div>
               <a
-                href="https://drive.google.com/file/d/1UEgRjk1GtQp9Wtb63qAuMvGuyemRbq0p/view?usp=sharing"
+                href="https://drive.google.com/file/d/1bVYqkNucb81ZJhFeR6kJfdiViflkVVQB/view"
                 target="_blank"
               >
                 <div className="social-item">My Resume</div>
