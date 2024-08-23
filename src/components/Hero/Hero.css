@@ -1,0 +1,241 @@
+.hero-background-circle {
+  height: 550px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--bg-secondary);
+  left: calc(50% - 140px);
+  top: 15%;
+}
+
+.hero-section {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  align-items: flex-end;
+}
+
+.hero-left {
+  flex: 1;
+}
+.hero-header {
+  font-size: 5rem;
+  letter-spacing: 3.5px;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 4rem;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.social-links {
+  color: var(--text-tertiary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.social-item:not(:nth-child(2)) {
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.social-item::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: var(--text-tertiary);
+  height: 2px;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.social-item:not(:nth-child(2)):hover {
+  transform: translate(10px);
+}
+.social-item:hover::before,
+.social-item:focus-visible:before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.hero-right {
+  width: 40%;
+}
+.image-container {
+  width: 100%;
+}
+.hero-img {
+  object-fit: cover;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-left .custom-btn {
+    height: 70px;
+  }
+  .hero-left .custom-btn::before {
+    width: 70px;
+  }
+  .hero-background-circle {
+    height: 550px;
+    left: calc(50% - 125px);
+    top: 20%;
+  }
+  .hero-right,
+  .hero-left {
+    margin-bottom: 8rem;
+  }
+  .hero-section {
+    height: calc(100dvh - 6rem);
+  }
+  .hero-header {
+    font-size: 3.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero-left .custom-btn {
+    height: 60px;
+  }
+  .hero-left .custom-btn::before {
+    width: 60px;
+  }
+  .hero-background-circle {
+    height: 500px;
+    left: calc(50% - 100px);
+    top: 20%;
+  }
+  .hero-left,
+  .hero-right {
+    margin-bottom: 10rem;
+  }
+  .hero-section {
+    height: calc(100dvh - 7rem);
+  }
+  .hero-header {
+    font-size: 2.7rem;
+  }
+  .social-links {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-left .custom-btn {
+    height: 50px;
+  }
+  .hero-left .custom-btn::before {
+    width: 50px;
+  }
+  .hero-background-circle {
+    height: 450px;
+    left: calc(50% - 100px);
+    top: 30%;
+  }
+  .hero-left,
+  .hero-right {
+    margin-bottom: 10rem;
+  }
+  .hero-section {
+    width: 90%;
+    height: calc(100dvh - 7rem);
+  }
+  .hero-header {
+    font-size: 2.5rem;
+  }
+  .social-links {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    gap: 2rem;
+  }
+}
+@media screen and (width <= 767px) {
+  .hero-left .custom-btn {
+    height: 50px;
+  }
+  .hero-left .custom-btn::before {
+    width: 50px;
+  }
+  .hero-background-circle {
+    height: 300px;
+    left: calc(50% - 100px);
+    top: 25%;
+  }
+  .hero-left,
+  .hero-right {
+    margin-bottom: 10rem;
+  }
+  .hero-section {
+    width: 90%;
+    height: calc(100dvh - 7rem);
+  }
+  .hero-header {
+    font-size: 2.5rem;
+  }
+  .social-links {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-left .custom-btn {
+    height: 50px;
+    margin: auto;
+  }
+  .hero-left .custom-btn::before {
+    width: 50px;
+  }
+  .hero-section {
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    margin-top: -7rem;
+    margin-bottom: 8rem;
+  }
+  .hero-left {
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .hero-right {
+    width: 100%;
+    margin: 4rem auto;
+  }
+  .hero-img {
+    width: 300px;
+  }
+  .hero-background-circle {
+    height: 350px;
+    left: 7%;
+    top: 15%;
+  }
+}
+
+@media screen and (width <= 375px) {
+  .hero-background-circle {
+    height: 350px;
+    left: calc(50% - 175px);
+    top: 18%;
+  }
+  .hero-img {
+    width: 350px;
+  }
+  .hero-section {
+    margin-top: -6rem;
+    align-content: center;
+  }
+
+}

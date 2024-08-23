@@ -1,0 +1,124 @@
+.project-container {
+  position: relative;
+  width: 100%;
+  padding: 6rem 0;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  transition: background-color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.project-container:not(:first-child):not(:last-child) {
+  border-top: 1px solid #313131;
+  border-bottom: 1px solid #313131;
+}
+.line {
+  position: absolute;
+  top: 120px;
+  width: 150px;
+  height: 1px;
+  background: #555;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.project-idx {
+  position: absolute;
+  top: 109px;
+  left: 165px;
+  color: #555;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.project-wrapper {
+  margin: 0 auto;
+  margin-left: 15rem;
+  width: calc(80% - 5rem);
+  display: flex;
+  justify-content: space-between;
+}
+.project-left {
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.project-title {
+  font-size: 3rem;
+  color: var(--text-tertiary);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.project-subtitle {
+  color: var(--text-secondary);
+}
+.project-stack {
+  color: var(--text-tertiary);
+}
+
+.project-container:hover .line {
+  background: var(--text-tertiary);
+  transform: scaleX(1.5);
+}
+.project-container:hover .project-idx {
+  color: var(--text-tertiary);
+  transform: scale(1.7);
+  left: 220px;
+}
+
+@media screen and (width >= 1024px) {
+  .project-container:hover {
+    background-color: var(--bg-primary);
+  }
+  .project-container:hover .project-left {
+    margin-left: calc(4rem + 50px);
+  }
+
+  .project-container:hover .project-title {
+    color: var(--text-primary);
+  }
+
+  .project-container:hover .custom-btn:focus-visible::before {
+    width: 100%;
+  }
+  .project-container:hover .custom-btn::before {
+    width: 100%;
+  }
+  .project-container:hover .custom-btn {
+    translate: 20px;
+  }
+  .project-container:hover .arrow {
+    transform: rotate(-30deg);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .project-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 4rem;
+    gap: 2rem;
+  }
+  .project-left {
+    margin-left: 0;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .line {
+    display: none;
+  }
+  .project-idx {
+    display: none;
+  }
+  .project-container {
+    padding: 4rem 0;
+  }
+  .project-wrapper {
+    margin: 0;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+  .project-title {
+    color: var(--text-primary);
+  }
+  .project-left {
+    text-align: center;
+  }
+  .project-right {
+    display: flex;
+    justify-content: center;
+  }
+}

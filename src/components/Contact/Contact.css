@@ -1,0 +1,123 @@
+.contact-container {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact-header {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--text-primary);
+}
+.contact-subheader {
+  text-wrap: balance;
+  font-size: 1.1rem;
+  color: var(--text-tertiary);
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+.contact-wrapper {
+  width: 40%;
+  position: relative;
+  margin: 2rem auto;
+}
+.form {
+  margin-top: 1.5rem;
+  padding: 35px 20px;
+  border-radius: 20px;
+  background-color: var(--bg-secondary);
+}
+
+.floating-label-group {
+  position: relative;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 13px;
+  left: 13px;
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
+  width: 3rem;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.contact-name:focus ~ .floating-label,
+.contact-email:focus ~ .floating-label,
+.contact-name:not(:focus):valid ~ .floating-label,
+.contact-email:not(:focus):valid ~ .floating-label {
+  top: -13px;
+  left: 13px;
+  font-size: 14px;
+  opacity: 1;
+  color: var(--accent-primary);
+}
+.contact-name:not(:focus):valid ~ .floating-label,
+.contact-email:not(:focus):valid ~ .floating-label {
+  color: #6f6f6f;
+}
+.top-row {
+  display: flex;
+  gap: 1rem;
+}
+.floating-label-group {
+  width: 100%;
+}
+.contact-name,
+.contact-email {
+  width: 100%;
+}
+.contact-name,
+.contact-email,
+.contact-msg,
+.contact-submit {
+  border-radius: 10px;
+  padding: 13px;
+  border: none;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+.contact-name,
+.contact-email,
+.contact-msg {
+  outline: 2px solid #333;
+  margin-bottom: 1rem;
+  transition: outline 200ms ease-in-out;
+}
+.contact-name:focus,
+.contact-email:focus,
+.contact-msg:focus {
+  outline: 2px solid var(--accent-primary);
+}
+.contact-msg {
+  width: 100%;
+  resize: none;
+  min-height: 15rem;
+}
+.contact-submit {
+  cursor: pointer;
+  height: 50px;
+  background-color: var(--accent-primary);
+  color: var(--text-secondary);
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media screen and (width <= 768px) {
+  .contact-header {
+    font-size: 3.5rem;
+  }
+  .contact-subheader {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .contact-wrapper {
+    width: 90%;
+  }
+  .top-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

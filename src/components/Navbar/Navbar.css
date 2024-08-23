@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  margin-bottom: 3rem;
+  z-index: 5;
+  position: sticky;
+  top: 0;
+  padding: 6px 50px;
+  height: 80px;
+  background-color: var(--bg-secondary);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.nav-item {
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.nav-left .nav-item {
+  font-family: "Satisfy", cursive;
+  color: var(--text-primary);
+  font-size: 3rem;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-right .nav-item:hover {
+  scale: 1.1;
+  color: var(--accent-secondary);
+}
+
+@media screen and (max-width: 425px) {
+  .nav {
+    padding: 6px 20px;
+    margin-bottom: 18rem;
+  }
+}

@@ -1,1 +1,1 @@
-# portfolio
+This portfolio website serves as a platform to showcase my skills, experience, and the projects I've worked on. It was built with React.js for the frontend and utilizes the Framer Motion library to add engaging animations and transitions.

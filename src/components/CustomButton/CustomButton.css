@@ -1,0 +1,61 @@
+@media screen and (width <= 768px) {
+  .custom-btn {
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    background-color: var(--accent-primary);
+    color: var(--text-secondary);
+    outline: none;
+    border: none;
+    border-radius: 35px;
+
+  }
+  .custom-btn .arrow {
+    display: none;
+  }
+}
+
+@media screen and (width > 768px) {
+  .custom-btn {
+    font-size: 1.3rem;
+    width: 250px;
+    height: 75px;
+    background: none;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .custom-btn::before {
+    width: 75px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--accent-primary);
+    inset: 0;
+    border-radius: 35px;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transform-origin: left;
+  }
+  .custom-btn:hover::before,
+  .custom-btn:focus-visible::before {
+    width: 100%;
+  }
+  .custom-btn:hover {
+    translate: 20px;
+  }
+  .custom-btn .arrow {
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .custom-btn:hover .arrow {
+    transform: rotate(-30deg);
+  }
+}

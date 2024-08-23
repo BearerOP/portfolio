@@ -1,0 +1,54 @@
+.project-section-wrapper {
+  padding-top: 8rem;
+}
+.project-section-header {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 4rem;
+  color: var(--text-primary);
+}
+.project-section-subheader, .project-section-more {
+  max-width: 79%;
+  margin: 1rem auto 7rem;
+  color: var(--text-tertiary);
+}
+.project-section-more {
+  margin-top: 7rem;
+}
+.project-section-more a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1)
+}
+.project-section-more a:hover {
+  translate: 20px;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (width <= 768px) {
+  .project-section-header, .project-section-subheader  {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-section-header {
+    font-size: 3.5rem;
+  }
+  .project-section-subheader {
+    font-size: 0.813rem;
+  }
+  .project-section-more a {
+   font-size: 2rem; 
+  }
+}
