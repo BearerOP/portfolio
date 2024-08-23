@@ -6,10 +6,12 @@
   top: 0;
   padding: 6px 50px;
   height: 80px;
-  background-color: var(--bg-secondary);
+  /* background-color: var(--bg-secondary); */
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #3a343480;
 }
 .nav-item {
   color: var(--text-tertiary);

@@ -1,6 +1,5 @@
 .quote-wrapper {
-  margin-top: 8rem;
-  width: 100%;
+  width:auto;
   height: 40dvh;
   padding: 20px;
   display: flex;
@@ -8,19 +7,21 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-color: #232323;
+  background: #00000019;
+  border: #54545441 solid 1px;
+  border-radius: 50vh;
+  margin:8rem 50px 4rem 50px;
 }
+
 .quote {
   font-size: 3.5vw;
   width: 80%;
-  background: linear-gradient(
-    300deg,
-    #ffee07,
-    #ff2b6a,
-    #ab4bff,
-    #5ca2ff,
-    #df1700
-  );
+  background: linear-gradient(300deg,
+      #ffee07,
+      #ff2b6a,
+      #ab4bff,
+      #5ca2ff,
+      #df1700);
   background-size: 360% 360%;
   animation: gradient-animation 30s ease infinite;
   -webkit-background-clip: text;
@@ -33,13 +34,16 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @media (max-width: 1024px) {
   .quote {
     font-size: 3rem;
@@ -50,6 +54,7 @@
   .quote-wrapper {
     height: 40dvh;
   }
+
   .quote {
     width: 100%;
     font-size: 2.3rem;
